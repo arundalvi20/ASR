@@ -1,25 +1,33 @@
 *{
+    
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
 }
+h1{
+    font-size: 30px;
+    font-weight:bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
 body{
     
     margin: 0;
     padding: 0;
-    background: url(bg.jpg) no-repeat;
+    background: url(final.jpeg) no-repeat;
     background-size: cover;
     
 }
 .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    position:relative;
+    top: 50px;
+    left: 40px;
+    /*transform: translate(-50%,50%);*/
 }
 .menu{
+    
     width: 300px;
     border-radius: 8px;
     overflow: hidden;
@@ -29,6 +37,8 @@ body{
     overflow: hidden;
 }
 .btn{
+    text-align: justify;
+    font-size: 20px;
     display: block;
     padding: 16px 20px;
     background: #3498db;
@@ -36,7 +46,7 @@ body{
 }
 .btn:before{
     content: "";
-    position: absolute;
+    position: relative;
     width: 14px;
     height: 14px;
     background: #3498db ;
@@ -53,23 +63,24 @@ body{
     overflow: hidden;
     transition: max-height 0.3s;
     max-height: 0;
+    
 }
 .sbmenu a{
     display: block;
     padding: 16px 26px;
     color: white;
     font-size: 15px;
-    margin: 5px 0;
-    position: relative;
+    
+    position: relative  ;
 }
 .sbmenu a:before{
 content: "";
 width: 6px;
-height: 100%;
-position: absolute;
+height: 50%;
+top: auto;
+position: relative;
 background: #3498db;
 left: 0;
-top: 0;
 transition: 0.4s;
 opacity: 0;
 
